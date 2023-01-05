@@ -1,0 +1,26 @@
+body{
+    background: linear-gradient(4deg, #184770a1, transparent);
+    margin: 0;
+    padding: 0;
+
+ 
+}
+
+.panel1 {
+   
+  margin: auto;
+  width: 1600px;
+  height: 939px;
+  background: #F5FEFF;
+}
+
+.panel-logo {
+    background: linear-gradient(45deg, #2A7AE4 60%, white);
+    display: flex;
+    align-items: flex-start;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
