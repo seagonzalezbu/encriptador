@@ -12,6 +12,7 @@ body{
   width: 1600px;
   height: 939px;
   background: #F5FEFF;
+
 }
 
 .panel-logo {
@@ -24,3 +25,46 @@ body{
     width: 100px;
     height: 100px;
 }
+
+.etiqueta1{
+    color: #2A7AE4;
+    font-size: 27.6px;
+    font-weight: bold;
+    font-family: "Cerebri", sans-serif;
+    margin-left: 100px;
+    
+}
+
+.panel_izquierdo{
+    padding-top: 100px;
+    background: whitesmoke;
+    width: 70%;
+}
+
+#texto{
+   
+    margin-left: 100px;
+    width: 70%;
+    height: 400px;
+    font-family: 'Lato', sans-serif;
+    float: left;
+    border-radius: 15px;
+    margin-top: 10px;
+    box-shadow: -5px 0px 0px 0px #38B6FF;
+
+
+
+}
+
+#texto::placeholder {
+    padding-left: 10px;
+  }
+
+  .panel_derecho{
+    float: right;
+    background: red;
+    border-radius: 24px;
+    width: 480px;
+    height: 500px;
+    margin-right: 50px;
+  }

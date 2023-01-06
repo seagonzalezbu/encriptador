@@ -4,18 +4,49 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Selector de estilos -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptar</title>
 </head>
 
 <body>
-    <div class="panel1">
-        <div class="panel-logo">
-            <img src="Logo_alura-removebg-preview.png" class="logo">
-        </div>
+    <div class="panel1"> <!--Panel principal -->
 
+        <div class="panel-logo"> <!-- panel de banner para el logo -->
+
+            <img src="imagenes\Logo_alura-removebg-preview.png" class="logo"> <!--logo en la parte superior izquierda-->
+           
+        </div>
+        <div class="panel_izquierdo">
+             <label id="etiqueta" class="etiqueta1" for="texto">Escribe tu texto aquí:</label><br>
+             <script>
+                // Array con el mensaje a mostrar
+var mensajes = [
+  "Ingrese el texto aquí"
+];
+
+// Contador para controlar la posición de la letra actual
+var posicion = 0;
+
+// Función que actualiza el texto del label letra por letra
+function actualizarLabel() {
+  var label = document.getElementById("etiqueta");
+  label.textContent = mensajes[0].substring(0, posicion);
+  posicion++;
+  if (posicion > mensajes[0].length) {
+    clearInterval(intervalId);
+  }
+}
+
+// Ejecuta la función actualizarLabel cada 50 milisegundos (0.05 segundos)
+var intervalId = setInterval(actualizarLabel, 100);
+                </script>
+            <textarea id="texto" placeholder="Solo letras minúsculas sin caracteres especiales."></textarea>
+        </div>
+        <div class="panel_derecho"></div>
     </div>
     
 </body>
