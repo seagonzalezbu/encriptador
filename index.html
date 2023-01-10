@@ -9,27 +9,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Encriptar</title>
 </head>
-<body>
+<body  onload="ocultarImagen()">
   <div class="panel1">
     <div class="panel-logo">
       <img src="imagenes\Logo_alura-removebg-preview.png" class="logo" alt="logo alura">
     </div>
     <div class="panel_izquierdo">
       <label class="etiqueta1" for="texto">Escribe tu texto aquí:</label><br>
-      <input type="text">
       <textarea id="texto" placeholder="Solo letras minúsculas sin caracteres especiales."></textarea>
       
     </div>
     <div class="panel_derecho">
-      <img src="imagenes\desierto.webp" class="desierto" alt="imagen desierto">
-      <h1 class="paneltitulo">Ningún mensaje fue encontrado</h1>
-      <textarea class="textarea2" placeholder="Ingrese el texto que desea encriptar o desencriptar"></textarea>
+      <img id="imagen1" src="imagenes\desierto.webp" class="desierto" alt="imagen desierto">
+      <h1 id= "h1derecho" class="paneltitulo">Ningún mensaje fue encontrado</h1>
+      <textarea id="texto2" class="textarea2" placeholder="Ingrese el texto que desea encriptar o desencriptar"></textarea>
+      <button id="copiar" type="button" onclick="copiar()">Copiar</button>
     </div>
     <div class="leftbutton">
-      <button id="encriptar" type="button">Encriptar</button>
+      <button id="encriptar" type="button" onclick="encriptar()">Encriptar</button>
     </div>
     <div class="rightbutton">
-      <button id="desencriptar" type="button">Desencriptar</button>
+      <button id="desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
     </div>
   </div>
 
